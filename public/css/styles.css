@@ -1,0 +1,58 @@
+*{
+  margin: auto;
+}
+
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: #000000;
+}
+
+nav {
+  margin: 0;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-size: 50px;
+}
+
+body {
+  background-color: #DBE2EF
+}
+
+.textArea{
+  text-align: center;
+  margin: 20px
+}
+
+.textArea1{
+  padding: 15px;
+}
+
+.myButton {
+  background: linear-gradient(to bottom, #7892c2 5%, #0b1d33 100%);
+  background-color: #7892c2;
+  border-radius: 42px;
+  border: 6px solid #13204a;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 17px 150px;
+  text-decoration: none;
+}
+
+.myButton:hover {
+  background: linear-gradient(to bottom, #0b1d33 5%, #7892c2 100%);
+  background-color: #0b1d33;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}

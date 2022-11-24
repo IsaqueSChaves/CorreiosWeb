@@ -6,20 +6,35 @@
   <title>Conversor</title>
   <link rel="stylesheet" href="/css/styles.css">
 </head>
+<nav>
+  <h2>Conversor</h2>
+</nav>
 
-<body>
+<body class="textArea">
   <form action="/" method="post">
+    <div class="textArea">
+
+    <div class="textArea1">
+
     <h3>Texto</h3>
-    <textarea name="textToConvert" rows="20" cols="70"></textarea>
-    <button class="button" type="submit">Converter</button>
+
+      <textarea name="textToConvert" rows="15" cols="140" placeholder="Insira o texto aqui"></textarea>
+
+    <button class="myButton" type="submit">Converter</button>
+  </div>
+
+  <div class="textArea2">
+
     <h3>Texto Convertido</h3>
-    <textarea name="outPut" cols="70" rows="20" wrap="on" readonly>
+
+      <textarea name="outPut" cols="140" rows="15" wrap="on" readonly>
       <% item.forEach(function(item){ %>
           <%- " . " + item + " . "%>
         <% }); %>
-
       </textarea>
-  </form>
+    </div>
+
+  </div>
+    </form>
 </body>
-<footer>Made by @Chavozoom 2022</footer>
 </html>
