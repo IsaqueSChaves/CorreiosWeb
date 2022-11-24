@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Conversor</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <form action="/" method="post">
+    <h3>Texto</h3>
+    <textarea name="textToConvert" rows="20" cols="70"></textarea>
+    <button class="button" type="submit">Converter</button>
+    <h3>Texto Convertido</h3>
+    <textarea name="outPut" cols="70" rows="20" wrap="on" readonly>
+      <% item.forEach(function(item){ %>
+          <%- " . " + item + " . "%>
+        <% }); %>
+
+      </textarea>
+  </form>
+</body>
+<footer>Made by @Chavozoom 2022</footer>
+</html>
