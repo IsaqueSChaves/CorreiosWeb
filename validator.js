@@ -12,7 +12,7 @@ exports.validate = function validate(texto) {
   for (var i = 0; i < str.length; i++) {
     var p = str.substr(i, 13);
     if (regex.test(p)) {
-      result.push(p)
+      result.push(p + "; ");
     }
 
     if (str.Length == i + 13) {
