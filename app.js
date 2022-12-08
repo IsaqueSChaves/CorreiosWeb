@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const app = express();
 const validate = require(__dirname + "/validator.js");
-const address = require(__dirname + "/getAddress.js");
+//const address = require(__dirname + "/getAddress.js");
 
 var endereco = [];
 var item = [];
@@ -23,7 +23,7 @@ app.get("/", function(req, res){
 app.post("/", function(req, res){
   const text = req.body.textToConvert;
   item = validate.validate(text);
-  endereco = address.getAddress(item);
+  //endereco = address.getAddress(item);
   res.redirect("/")
 });
 
