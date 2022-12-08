@@ -11,7 +11,7 @@ exports.validate = function validate(texto) {
 
   for (var i = 0; i < str.length; i++) {
     var p = str.substr(i, 13);
-    if (regex.test(p)) {
+    if (regex.test(p) && str[i-1] == ':') {
       result.push(p + "; ");
     }
 

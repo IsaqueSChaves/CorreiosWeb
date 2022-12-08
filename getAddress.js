@@ -16,6 +16,7 @@ exports.getAddress = function getAddress(codes) {
 
   async function takeAddress(url) {
 
+    console.log("Take address");
     let count = 1;
     const browser = await puppeteer.launch();
     console.log("Nova página aberta!");
